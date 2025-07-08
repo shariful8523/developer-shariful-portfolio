@@ -21,7 +21,7 @@ const Home = () => {
                     </h1>
                     {/* Name */}
                     <h2 className='text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 leading-tight '>
-                        Md Shariful Islam
+                        Md. Shariful Islam
                     </h2>
 
                     {/* Skills heading with typical effect */}
@@ -62,7 +62,7 @@ const Home = () => {
                             boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
                         }}
                     >
-                        DOWNLOAD CV
+                        DOWNLOAD RESUME
                     </a>
                 </div>
 

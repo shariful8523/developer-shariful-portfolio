@@ -18,7 +18,10 @@ import figmaLogo from './assets/tech_logo/figma.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel2.png';
 
+// Project Section Image
 
+import BistroBossResturent from './assets/Project _Image/Bistro Boss resturent.png'
+import OnlineTutorBooking from './assets/Project _Image/Online Tutor Booking.png'
 
 
 
@@ -64,3 +67,31 @@ export const SkillsInfo = [
     ],
   },
 ];
+
+
+// Project Section
+
+
+export const projects = [
+    {
+      id: 0,
+      title: "Bistro Boss Restaurant",
+      description:
+        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
+      image: BistroBossResturent,
+      tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express.js", "Mongodb", "JWT", "Firebase", "Stripe", ],
+      github: "https://github.com/shariful8523/Bistro-Boss-Restaurant-Client",
+      webapp: "https://bistro-boss-restorent-cb0b2.web.app/",
+    },
+    {
+      id: 1,
+      title: "Online Tutor Booking System",
+      description:
+        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
+      image: OnlineTutorBooking,
+      tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express.js", "Mongodb", "JWT", "Firebase",  ],
+      github: "https://github.com/shariful8523/online-tutorbooking-client-side?tab=readme-ov-file",
+      webapp: "https://online-tutorbooking.web.app/",
+    },
+    
+  ];  

@@ -1,4 +1,4 @@
-// Skills Section Logo's
+// Skills Section Logos
 import htmlLogo from './assets/tech_logo/html.png';
 import cssLogo from './assets/tech_logo/css.png';
 import javascriptLogo from './assets/tech_logo/javascript.png';
@@ -18,20 +18,18 @@ import figmaLogo from './assets/tech_logo/figma.png';
 import netlifyLogo from './assets/tech_logo/netlify.png';
 import vercelLogo from './assets/tech_logo/vercel2.png';
 
-// Project Section Image
+// Project Section Images
+import BistroBossRestaurant from './assets/Project _Image/Bistro Boss resturent.png';
+import OnlineTutorBooking from './assets/Project _Image/Online Tutor Booking.png';
+import Rinterio from './assets/Project _Image/Rinterio.png';
 
-import BistroBossResturent from './assets/Project _Image/Bistro Boss resturent.png'
-import OnlineTutorBooking from './assets/Project _Image/Online Tutor Booking.png'
-import Rinterio  from './assets/Project _Image/Rinterio.png'
-
-
-
+// Skills Information
 export const SkillsInfo = [
   {
     title: 'Frontend',
     skills: [
       { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo }, 
+      { name: 'CSS', logo: cssLogo },
       { name: 'Tailwind CSS', logo: tailwindcssLogo },
       { name: 'JavaScript', logo: javascriptLogo },
       { name: 'React JS', logo: reactjsLogo },
@@ -51,7 +49,6 @@ export const SkillsInfo = [
     title: 'Languages',
     skills: [
       { name: 'JavaScript', logo: javascriptLogo },
-     
     ],
   },
   {
@@ -69,40 +66,36 @@ export const SkillsInfo = [
   },
 ];
 
-
-// Project Section
-
-
+// Projects Information
 export const projects = [
-    {
-      id: 0,
-      title: "Bistro Boss Restaurant",
-      description:
-        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-      image: BistroBossResturent,
-      tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express.js", "Mongodb", "JWT", "Firebase", "Stripe", ],
-      github: "https://github.com/shariful8523/Bistro-Boss-Restaurant-Client",
-      webapp: "https://bistro-boss-restorent-cb0b2.web.app/",
-    },
-    {
-      id: 1,
-      title: "Online Tutor Booking System",
-      description:
-        "A powerful and user-friendly React.js application designed to uncover and showcase detailed GitHub profile information. Simply enter a GitHub username, and the app fetches comprehensive data, including profile stats, repositories, followers, and contributions. The intuitive interface ensures a seamless experience, making it a must-visit tool for developers and recruiters.",
-      image: OnlineTutorBooking,
-      tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express.js", "Mongodb", "JWT", "Firebase",  ],
-      github: "https://github.com/shariful8523/online-tutorbooking-client-side?tab=readme-ov-file",
-      webapp: "https://online-tutorbooking.web.app/",
-    },
-    {
-      id: 2,
-      title: "Rinterio – Modern Architectural Landing Page",
-      description:
-        "Rinterio is a modern, responsive landing page template designed to showcase architectural designs, particularly barn houses. It highlights services, portfolio, and contact information with an elegant and user-friendly interface.",
-      image: Rinterio,
-      tags: ["HTML", "CSS", "Tailwind CSS" ],
-      github: "https://github.com/shariful8523/Rinterio-Modern-Architectural-Landing-Page",
-      webapp: "https://shariful8523.github.io/Rinterio-Modern-Architectural-Landing-Page",
-    }
-    
-  ];  
+  {
+    id: 0,
+    title: "Bistro Boss Restaurant",
+    description: 
+    " Bistro Boss is a sleek, responsive restaurant web application designed to provide a seamless experience for browsing menus, placing orders, and making secure online payments.\n\nWith role-based dashboards, analytics, and dynamic features, it’s a complete solution for modern restaurant management and online food ordering.",
+    image: BistroBossRestaurant,
+    tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express.js", "MongoDB", "JWT", "Firebase", "Stripe"],
+    github: "https://github.com/shariful8523/Bistro-Boss-Restaurant-Client",
+    webapp: "https://bistro-boss-restorent-cb0b2.web.app/",
+  },
+  {
+    id: 1,
+    title: "Online Tutor Booking System",
+    description:
+      "Welcome to the Online Tutor Booking System — a platform designed to connect users with tutors across different languages. This system streamlines the process of finding, reviewing, and booking tutors, making language learning accessible, interactive, and engaging.\n\nThis project was developed as part of Assignment Category 14 and showcases key skills in full-stack development, including authentication, responsive design, and an enhanced user experience.",
+    image: OnlineTutorBooking,
+    tags: ["HTML", "CSS", "Tailwind CSS", "JavaScript", "React JS", "Node.js", "Express.js", "MongoDB", "JWT", "Firebase"],
+    github: "https://github.com/shariful8523/online-tutorbooking-client-side?tab=readme-ov-file",
+    webapp: "https://online-tutorbooking.web.app/",
+  },
+  {
+    id: 2,
+    title: "Rinterio – Modern Architectural Landing Page",
+    description:
+      "Rinterio is a modern, responsive landing page template designed to showcase architectural designs, particularly barn houses. It highlights services, portfolio, and contact information with an elegant and user-friendly interface.",
+    image: Rinterio,
+    tags: ["HTML", "CSS", "Tailwind CSS"],
+    github: "https://github.com/shariful8523/Rinterio-Modern-Architectural-Landing-Page",
+    webapp: "https://shariful8523.github.io/Rinterio-Modern-Architectural-Landing-Page",
+  },
+];

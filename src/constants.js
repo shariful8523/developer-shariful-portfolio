@@ -22,6 +22,7 @@ import vercelLogo from './assets/tech_logo/vercel2.png';
 
 import BistroBossResturent from './assets/Project _Image/Bistro Boss resturent.png'
 import OnlineTutorBooking from './assets/Project _Image/Online Tutor Booking.png'
+import Rinterio  from './assets/Project _Image/Rinterio.png'
 
 
 
@@ -93,5 +94,15 @@ export const projects = [
       github: "https://github.com/shariful8523/online-tutorbooking-client-side?tab=readme-ov-file",
       webapp: "https://online-tutorbooking.web.app/",
     },
+    {
+      id: 2,
+      title: "Rinterio – Modern Architectural Landing Page",
+      description:
+        "Rinterio is a modern, responsive landing page template designed to showcase architectural designs, particularly barn houses. It highlights services, portfolio, and contact information with an elegant and user-friendly interface.",
+      image: Rinterio,
+      tags: ["HTML", "CSS", "Tailwind CSS" ],
+      github: "https://github.com/shariful8523/Rinterio-Modern-Architectural-Landing-Page",
+      webapp: "https://shariful8523.github.io/Rinterio-Modern-Architectural-Landing-Page",
+    }
     
   ];  

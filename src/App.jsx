@@ -24,7 +24,7 @@ function App() {
       </div>
 
 
-      <div className='relative pt-20'>
+      <div className='relative pt-20 '>
         <Home></Home>
        <Navbar></Navbar>
        <About></About>

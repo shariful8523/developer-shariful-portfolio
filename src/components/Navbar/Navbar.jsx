@@ -8,9 +8,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -19,45 +17,40 @@ const Navbar = () => {
     setActiveSection(sectionId);
     setIsOpen(false);
     const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
+    if (section) section.scrollIntoView({ behavior: "smooth" });
   };
 
   const menuItems = [
-    // { id: "home", label: "Home" },
     { id: "about", label: "About" },
     { id: "skills", label: "Skills" },
-    // { id: "experience", label: "Experience" },
     { id: "project", label: "Project" },
-    // { id: "education", label: "Education" },
     { id: "contact", label: "Contact" },
   ];
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
-        isScrolled ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md" : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled
+          ? "bg-[#050414]/60 backdrop-blur-md shadow-md"
+          : "bg-transparent"
+        }`}
     >
-      <div className="text-white py-5 flex justify-between items-center">
+      <div className="w-11/12 mx-auto px-5 md:px-10 lg:px-16 flex justify-between items-center py-4 text-white">
         {/* Logo */}
-        <div className="text-lg font-semibold cursor-pointer">
+        <div className="text-xl md:text-2xl font-semibold cursor-pointer select-none">
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Shariful</span>
+          <span>Shariful</span>
           <span className="text-[#8245ec]">/</span>
-          <span className="text-white">Islam</span>
+          <span>Islam</span>
           <span className="text-[#8245ec]">&gt;</span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex items-center space-x-10 text-gray-300 font-medium">
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
-                activeSection === item.id ? "text-[#8245ec]" : ""
-              }`}
+              className={`cursor-pointer transition-colors duration-200 hover:text-[#8245ec] ${activeSection === item.id ? "text-[#8245ec]" : ""
+                }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
                 {item.label}
@@ -67,22 +60,22 @@ const Navbar = () => {
         </ul>
 
         {/* Social Icons */}
-        <div className="hidden md:flex space-x-4">
+        <div className="hidden md:flex space-x-5">
           <a
             href="https://github.com/shariful8523"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="hover:text-[#8245ec] text-gray-300 transition-colors"
           >
-            <FaGithub size={24} />
+            <FaGithub size={22} />
           </a>
           <a
             href="https://www.linkedin.com/in/shariful8523"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-[#8245ec]"
+            className="hover:text-[#8245ec] text-gray-300 transition-colors"
           >
-            <FaLinkedin size={24} />
+            <FaLinkedin size={22} />
           </a>
         </div>
 
@@ -102,28 +95,27 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu Items */}
+      {/* Mobile Menu */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
+        <div className="md:hidden bg-[#050414]/90 backdrop-blur-md w-full py-5 absolute left-0 top-[70px]">
+          <ul className="flex flex-col items-center space-y-5 text-gray-300">
             {menuItems.map((item) => (
               <li
                 key={item.id}
-                className={`cursor-pointer hover:text-white ${
-                  activeSection === item.id ? "text-[#8245ec]" : ""
-                }`}
+                className={`cursor-pointer hover:text-[#8245ec] ${activeSection === item.id ? "text-[#8245ec]" : ""
+                  }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>
                   {item.label}
                 </button>
               </li>
             ))}
-            <div className="flex space-x-4">
+            <div className="flex space-x-5 pt-3">
               <a
                 href="https://github.com/shariful8523"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="hover:text-[#8245ec] text-gray-300"
               >
                 <FaGithub size={24} />
               </a>
@@ -131,7 +123,7 @@ const Navbar = () => {
                 href="https://www.linkedin.com/in/shariful8523"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-300 hover:text-white"
+                className="hover:text-[#8245ec] text-gray-300"
               >
                 <FaLinkedin size={24} />
               </a>

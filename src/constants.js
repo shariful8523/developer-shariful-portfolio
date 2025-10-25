@@ -24,6 +24,8 @@ import OnlineTutorBooking from "./assets/Project _Image/Online Tutor Booking.png
 import Rinterio from "./assets/Project _Image/Rinterio.png";
 import ParcelPilot from "./assets/Project _Image/ParcelPilot.png";
 
+
+
 // Skills Information
 export const SkillsInfo = [
   {

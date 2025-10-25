@@ -63,8 +63,8 @@ const Home = () => {
           </p>
 
           <a
-            href="https://docs.google.com/document/d/1gvPQkjhr2H_0jAdMOT294mGYNWr4pzKXKfQLzExG0Ks/edit?usp=sharing"
-            target="_blank"
+            href="/MD_SHARIFUL_ISLAM_RESUME.pdf"
+            download="Md_Shariful_Islam_Resume.pdf"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full text-lg font-bold transition duration-300 transform hover:scale-105"
             style={{
@@ -81,7 +81,7 @@ const Home = () => {
         <div className="lg:w-[45%] flex justify-center lg:justify-end">
           <Tilt
             className="w-44 h-44 sm:w-64 sm:h-64 lg:w-[24rem] lg:h-[24rem] border-4 border-purple-600 rounded-full"
-            tiltEnable={!isMobile} 
+            tiltEnable={!isMobile}
             tiltMaxAngleX={15}
             tiltMaxAngleY={15}
             perspective={1000}

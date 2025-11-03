@@ -93,7 +93,7 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Bistro Boss Restaurant",
+    title: "Parcel Pilot - A Parcel Delivery System",
      description:
     "Parcel Pilot is a modern, fast, and secure door-to-door parcel delivery system across Bangladesh. It features role-based dashboards for Admins, Riders, and Users, real-time parcel tracking, OTP-secured deliveries, and dynamic parcel management. Designed to streamline logistics with efficiency and reliability.",
     image: ParcelPilot,
